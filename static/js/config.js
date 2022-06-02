@@ -1,6 +1,6 @@
 const HIDEARR = []; // 需要隐藏的目录名
 
-const LOCATIONURL = "/overview/survey/";
+const LOCATIONURL = "/compute/vm/intro/instance/";
 
 if (window) {
   window.LOCATIONURL = LOCATIONURL;
