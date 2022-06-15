@@ -70,7 +70,7 @@ weight: 1
    </tr>
    <tr>
     <td> 协议</td>
-    <td> 选择协议类型，目前支持</td>
+    <td> 选择协议类型</td>
    </tr>
    </table>
 

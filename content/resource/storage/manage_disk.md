@@ -16,7 +16,7 @@ weight: 4
 
 ## 操作步骤
 
-### 修改硬盘
+### 修改属性
 
 1. 登录管理平台。
 
@@ -42,7 +42,77 @@ weight: 4
 
    ![manage_disk_2](../../_images/manage_disk_2.png)
 
-3. 物理挂载硬盘需登录虚拟主机，使用 `mount` 命令进行挂载。
+3. 登录至硬盘所在的虚拟主机。
+
+   > **说明：**
+   >
+   > - 使用`mount`命令进行物理挂载；
+   > - 参考[连接主机](/resource/virtual/expresscloud/link_virtual)相关内容，登录硬盘所在虚拟主机。
+
+4. 执行如下命令，查看磁盘设备名，其中 /dev/vdc 为新增盘。
+   ```
+   # lsblk -l
+   NAME  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+   vda   252:0    0   20G  0 disk
+   vda1  252:1    0 19.9G  0 part /
+   vda14 252:14   0    4M  0 part
+   vda15 252:15   0  106M  0 part /boot/efi
+   vdb   252:16   0    4G  0 disk [SWAP]
+   vdc   252:32   0   20G  0 disk
+   ```
+
+5. 执行如下命令，对磁盘进行格式化。
+
+   ```
+   # mkfs.ext4 /dev/vdc
+   ```
+   > **说明：**
+   >
+   > /dev/vdc：为待格式化的磁盘盘符，需根据实际情况进行修改。
+
+   ![manage_disk_2_1](../../_images/manage_disk_2_1.png)
+
+6. 执行如下命令，查看格式化后磁盘的文件系统信息。
+   ```
+   # lsblk -f
+   ```
+
+   ![manage_disk_2_2](../../_images/manage_disk_2_2.png)
+
+7. 执行如下命令，创建新的磁盘挂载目录。
+   ```
+   # mkdir /mnt/data
+   ```
+   > **说明：**
+   >
+   > /mnt/data：为新创建的磁盘挂载目录，需根据实际情况进行修改。
+
+8. 执行如下命令，将磁盘挂载到步骤 5 创建的系统目录下。
+
+   ```
+   # mount /dev/vdc /mnt/data
+   ```
+   > **说明：**
+   >
+   > /dev/vdc：为待挂载磁盘的盘符，需根据实际情况进行修改。
+   >
+   > /mnt/data：为磁盘挂载的系统目录，需根据实际情况进行修改
+
+9. 使用 `df` 命令，查看磁盘是否挂载成功.
+
+   ```
+   # df -h
+   Filesystem      Size  Used Avail Use% Mounted on
+   udev            2.0G     0  2.0G   0% /dev
+   tmpfs           394M  672K  393M   1% /run
+   /dev/vda1        20G  1.3G   18G   7% /
+   tmpfs           2.0G     0  2.0G   0% /dev/shm
+   tmpfs           5.0M     0  5.0M   0% /run/lock
+   tmpfs           2.0G     0  2.0G   0% /sys/fs/cgroup
+   /dev/vda15      105M  3.9M  101M   4% /boot/efi
+   tmpfs           394M     0  394M   0% /run/user/0
+   tmpfs           394M     0  394M   0% /run/user/1000
+   /dev/vdc         20G   45M   19G   1% /mnt/data
 
 - **卸载硬盘**
 
