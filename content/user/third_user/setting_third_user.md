@@ -1,5 +1,5 @@
 ---
-title: "修改第三方登录"
+title: "管理第三方服务器"
 date: 2021-09-06T00:38:25+09:00
 description: 本小节主要介绍如何进入用户管理页面查看当前平台内的本地用户。
 draft: false
@@ -21,22 +21,23 @@ weight: 3
 
 ## 操作步骤
 
-1. 登录**云易捷管理平台**。
+### 修改第三方服务器
+
+1. 登录**管理平台**。
 
 2. 在顶部导航栏，选择**用户管理** > **第三方登录**，进入第三方登录列表页面。
 
+   > **说明：**
+   >
+   > 在**第三方登录**列表页面的搜索框中输入服务器名称，点击`Enter`，找到指定的第三方服务器。
 
-3. 在**第三方登录**列表页面的搜索框中输入待修改信息的服务器名称，点击`Enter`，找到指定的第三方服务器。
+   ![setting_third_user_1](../../_images/setting_third_user_1.png)
 
-   ![setting_local_user_1](../../_images/setting_local_user_1.png)
-
-### 修改第三方服务器
-
-1. 点击待修改名称的本地用户所在行右侧的<img src="../../_images/more_operation.png" style="zoom:50%;" />，选择**修改**。
+3. 点击待修改名称的本地用户所在行右侧的<img src="../../_images/more_operation.png" style="zoom:50%;" />，选择**修改**。
 
    ![setting_third_user_2](../../_images/setting_third_user_2.png)
 
-2. 在弹出的**修改第三方服务器**的窗口中输入相应参数，点击**修改**即可。可修改的内容包括名称、类型、服务器地址/端口、基准、管理员账户/密码。
+4. 在弹出的**修改第三方服务器**的窗口中输入相应参数，点击**修改**即可。可修改的内容包括名称、类型、服务器地址/端口、基准、管理员账户/密码。
 
    ![setting_third_user_3](../../_images/setting_third_user_3.png)
 
@@ -44,11 +45,13 @@ weight: 3
 
  #### 禁用服务器
 
-1. 点击待禁用服务器所在行右侧的<img src="../../_images/more_operation.png" style="zoom:50%;" />，选择**禁用服务器**。
+1. 登录**管理平台**。
+
+2. 在顶部导航栏，选择**用户管理** > **第三方登录**，进入第三方登录列表页面。 点击待禁用服务器所在行右侧的<img src="../../_images/more_operation.png" style="zoom:50%;" />，选择**禁用服务器**。
 
    ![setting_third_user_4](../../_images/setting_third_user_4.png)
 
-2. 在弹出的**禁用**的窗口中，点击**禁用**即可。
+3. 在弹出的**禁用**的窗口中，点击**禁用**即可。
 
    > **注意:**
    >
@@ -56,18 +59,20 @@ weight: 3
 
    ![setting_third_user_5](../../_images/setting_third_user_5.png)
 
-3. 返回第三方登录列表，此时弹出**当前服务器被禁用成功**的提示符，且该服务器的状态变为**已禁用**。
+4. 返回第三方登录列表，此时弹出**当前服务器被禁用成功**的提示符，且该服务器的状态变为**已禁用**。
 
    ![setting_third_user_6](../../_images/setting_third_user_6.png)
 
 
 #### 启用服务器
 
-1. 点击待恢复的服务器所在行右侧的<img src="../../_images/more_operation.png" style="zoom:50%;" />，选择**启用服务器**。
+1. 登录**管理平台**。
+
+2. 在顶部导航栏，选择**用户管理** > **第三方登录**，进入第三方登录列表页面。 点击待恢复的服务器所在行右侧的<img src="../../_images/more_operation.png" style="zoom:50%;" />，选择**启用服务器**。
 
    ![setting_third_user_7](../../_images/setting_third_user_7.png)
 
-2. 返回第三方登录列表，此时弹出**当前服务器已被恢复**的提示符，此时该服务器状态变为**活跃**。
+3. 返回第三方登录列表，此时弹出**当前服务器已被恢复**的提示符，此时该服务器状态变为**活跃**。
 
    ![setting_third_user_8](../../_images/setting_third_user_8.png)
 

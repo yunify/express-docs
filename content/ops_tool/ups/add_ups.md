@@ -44,7 +44,7 @@ weight: 1
    </tr>
    <tr>
     <td>IP </td>
-    <td>IP 地址。</td>
+    <td>	UPS 电源配置的 SNMP 卡 IP 地址。</td>
    </tr>
    <tr>
     <td> UPS 版本</td>

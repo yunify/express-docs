@@ -1,5 +1,5 @@
 ---
-title: "基于主机创建备份"
+title: "基于 ExpressCloud 主机创建备份"
 description: 本小节主要介绍如何基于虚拟主机创建备份。
 draft: false
 weight: 3
@@ -39,11 +39,11 @@ weight: 3
 
 ### 管理备份
 
-6. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**修改**，在弹出的**修改属性**窗口中，可对当前备份的名称和相应描述进行修改。
+1. 在相应主机的详情页面，选择**备份**页签，点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**修改**，在弹出的**修改属性**窗口中，可对当前备份的名称和相应描述进行修改。
 
    ![view_virtual_9](../../../_images/view_virtual_9.png)
 
-7. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**共享备份**，在弹出的**共享备份**窗口输入用户名或用户 ID，可将当前备份共享给其他用户。
+2. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**共享备份**，在弹出的**共享备份**窗口输入用户名或用户 ID，可将当前备份共享给其他用户。
 
    > **说明：**
    >
@@ -51,11 +51,11 @@ weight: 3
 
    ![view_virtual_10](../../../_images/view_virtual_10.png)
 
-8. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**创建镜像**，可基于当前的虚拟主机备份创建镜像。在弹出的**创建镜像**窗口中，输入名称，点击**创建**即可。
+3. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**创建镜像**，可基于当前的虚拟主机备份创建镜像。在弹出的**创建镜像**窗口中，输入名称，点击**创建**即可。
 
    ![view_virtual_11](../../../_images/view_virtual_11.png)
 
-9.  点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**回滚**，弹出回滚窗口，点击**回滚**即可。
+4. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**回滚**，弹出回滚窗口，点击**回滚**即可。
 
    > **注意：**
    >
@@ -63,7 +63,7 @@ weight: 3
 
    ![view_virtual_12](../../../_images/view_virtual_12.png)
 
-10.  点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**删除**，在弹出窗口中点击**删除**，即可删除当前备份。
+5. 点击备份所在行右侧的<img src="../../../_images/more_operation.png" style="zoom:50%;" />，选择**删除**，在弹出窗口中点击**删除**，即可删除当前备份。
 
    > **注意：**
    >
